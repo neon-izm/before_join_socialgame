@@ -1,3 +1,12 @@
+
+https://neon-izm.github.io/before_join_socialgame/
+
+# Contributing
+Feel free to contribute 
+/website/docs
+
+are simple markdown file.You can fork and write anything.
+
 # Setup(Windows)
 0. launch PowerShell
 1. `install chocolatey`
