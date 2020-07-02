@@ -1,3 +1,6 @@
+
+https://neon-izm.github.io/before_join_socialgame/
+
 # Setup(Windows)
 0. launch PowerShell
 1. `install chocolatey`
