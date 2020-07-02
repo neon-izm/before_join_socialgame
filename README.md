@@ -5,7 +5,7 @@
 3. `choco install yarn`
 4. `yarn global add @docusaurus/init@next`
 5. cd to website root directory
-6. `yarn run start'
+6. `yarn run start`
 
 
 
