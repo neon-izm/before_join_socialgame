@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        実装の詳細ではなく、概念をインストールしましょう
+        ソーシャルゲームクライアントは大変です。まずは実装の詳細ではなく、概念をインストールしましょう
       </>
     ),
   },
@@ -25,7 +25,15 @@ const features = [
       </>
     ),
   },
-  
+   {
+    title: <>オープンソース</>,
+	imageUrl: 'img/GitHub-Mark-120px-plus.png',
+    description: (
+      <>
+        <a href="https://github.com/neon-izm/before_join_socialgame">https://github.com/neon-izm/before_join_socialgame </a>でプルリクを受け付けます
+      </>
+    ),
+  },
 ];
 
 function Feature({imageUrl, title, description}) {
