@@ -8,6 +8,11 @@ sidebar_label: 2章:ソーシャルゲーム向けのUnityクライアント作�
 ## アウトゲームって何
 ### 楽しい多解像度、多アスペクト、ノッチ対応
 ### 多言語対応をしよう
+
+Unity標準でlocalizationライブラリがUPM経由で提供されようとしています。
+Google SpreadSheetからのインポートも出来そうなので、今後はこれを使うプロジェクトも出てくるかも知れません。
+https://docs.unity3d.com/Packages/com.unity.localization@latest/
+
 ### UIライブラリの変遷
 #### NGUI期
 #### uGUI期
