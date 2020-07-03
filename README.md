@@ -1,11 +1,16 @@
+ソーシャルゲームのクライアントエンジニア入門以前　のWebサイトの中身リポジトリです。
 
 https://neon-izm.github.io/before_join_socialgame/
 
 # Contributing
-Feel free to contribute 
-/website/docs
+Feel free to contribute. 
+お気軽にissueやpull reqを送ってください。誤字脱字の訂正も歓迎します。
 
+/website/docs
 are simple markdown file.You can fork and write anything.
+
+/website/docs  
+内の*.mdファイルはシンプルなテキストのmarkdownファイルなので、ここだけをローカルのテキストエディタで編集すれば、プレビュー出来ます。
 
 # Setup(Windows)
 0. launch PowerShell
@@ -27,6 +32,4 @@ automated to push gh-pages branch.
 3. access to https://neon-izm.github.io/before_join_socialgame/
 
 
-# before_join_socialgame
-Docusaurus
 
