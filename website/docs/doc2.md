@@ -30,6 +30,7 @@ sidebar_label: 1章:サーバサイドと仲良くなろう
 ### 非永続のリアルタイム通信
 #### Photonか自社製か
 #### マッチメイキング
+### 暗号化通信(SSL通信)
 
 ## 認証って何
 ### 認証方式JWTとクッキー
@@ -40,6 +41,7 @@ sidebar_label: 1章:サーバサイドと仲良くなろう
 #### mBaasを使う
 #### 自社基盤を作るか使う
 ##### SignInWithApple
+##### GooglePlayServices
 ##### Twitter
 
 ## アプリバージョンアップをしよう

@@ -25,7 +25,6 @@ https://docs.unity3d.com/Packages/com.unity.localization@latest/
 ### DEV,STG,PROD
 ### InHouseBuildとDeploygate
 ## メジャーなライブラリを知ろう
-### UniRX
+### UniRx
 ### Zenject
 ### UniTask
-
