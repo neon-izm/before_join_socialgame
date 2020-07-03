@@ -17,10 +17,9 @@ sidebar_label: 2章:ソーシャルゲーム向けのUnityクライアント作�
 ### ダイアログシステム
 ### 誤タップ防止とUIアニメーション
 ## 環境分けを作ろう
-### DEV,STG,PROD
+### LOC,DEV,STG,PROD
 ### InHouseBuildとDeploygate
 ## メジャーなライブラリを知ろう
-### UniRX
+### UniRx
 ### Zenject
 ### UniTask
-
