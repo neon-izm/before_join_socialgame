@@ -56,7 +56,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="ソーシャルゲームのクライアントエンジニア入門以前">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
