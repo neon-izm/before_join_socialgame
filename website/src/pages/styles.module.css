@@ -17,7 +17,20 @@
     padding: 2rem;
   }
 }
+h2 {
+  position: relative;
+  padding-bottom: 0.5em;
+  border-bottom: 4px solid #DDD;
+}
 
+h2::after {
+  position: absolute;
+  content: " ";
+  border-bottom: solid 4px #f36c21;
+  bottom: -4px;
+  width:10%;
+  display: block;
+}
 .buttons {
   display: flex;
   align-items: center;
