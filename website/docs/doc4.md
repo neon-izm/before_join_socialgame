@@ -89,8 +89,8 @@ https://qiita.com/neon-izm/items/b105130fac060ec40ad4
 - 無能運営と罵られます
 
 **詳しく知りたい人は、この辺の単語でググってほしい**
-https://hajime-blog.net/work/kpibasic-part1
-https://yuranhiko.hatenablog.com/entry/Game_KPI/001
+- https://hajime-blog.net/work/kpibasic-part1
+- https://yuranhiko.hatenablog.com/entry/Game_KPI/001
 
 ### 用語
 #### DAU (プレイ人数/日)
