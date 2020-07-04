@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        暇なときにアップデートされます
+        暇なときにアップデートされます。それ以外にもプルリクを受け付けているので、有識者による更新でアップデートされます。
       </>
     ),
   },
