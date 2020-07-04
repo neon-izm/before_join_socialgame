@@ -31,7 +31,11 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Twitter',
+              label: 'Github Repo ',
+              href: 'https://github.com/neon-izm/before_join_socialgame',
+            },
+            {
+              label: 'Auther twitter: @izm',
               href: 'https://twitter.com/izm',
             },
           ],
