@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-18.04
+    defaults:
+      run:
+        working-directory: website
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: git config
+      run: |
+        git config --global user.email "docusaurus@example.com"
+        git config --global user.name "docusaurus"
+    - run: yarn install
+    - run: yarn deploy
+      env:
+        GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
