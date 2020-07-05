@@ -35,7 +35,50 @@ HTTP通信は様々な要素があって大変ですが、Unityでサーバと�
 
 会話例「このAPIってGETになってるけど、クライアントから現在の所持コイン数を渡してあげたいからPOSTにした方が良くないですか？」
 ### 通信エラーのリトライ処理をしよう
-### Jsonって何
+### JSON
+
+JSONは `JavaScript Object Notation`の略で、`構造化データ`を`シリアライズ`するテキスト形式の一つです。
+JavaScriptのObjectを記述する方法から派生しました。
+
+JSONは4つのプリミティブ型と2つの構造化型をテキストで表すことができます。
+
+* プリミティブ型
+  * 文字列
+  * 数値
+  * ブール値
+    * `true`
+    * `false`
+  * ヌル
+    * `null`
+* 構造化型
+  * オブジェクト
+    * `{"key":"value}`
+  * 配列
+    * `[1,2,3,4,5]`
+
+これらの型を組み合わせて構造化データを表現できます。例えば以下のような表現ができます。
+
+```json
+[
+  {
+    "name":"taro",
+    "age":20,
+    "equipments":["item1","item2","item3"]
+  },
+  {
+    "name":"hanako",
+    "age":20,
+    "equipments":["ITEM1","ITEM2","ITEM3"]
+  }
+]
+```
+    
+形式に関する詳細は[RFC8259](https://www.rfc-editor.org/info/rfc8259)を参照してください。有志による和訳は[こっち](http://www.asahi-net.or.jp/~ax2s-kmtn/internet/rfc8259j.html)。
+
+
+
+JSON形式でデータを送るときは`Content-type`に`application/json`を設定します。
+
 ### 通信が永続的か永続的じゃないか
 いきなり永続的、と言われてもびっくりしてしまいますよね。
 ネットワーク通信は、便宜上永続的なものと、永続的じゃないものがあります。  
