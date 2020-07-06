@@ -57,7 +57,7 @@ https://docs.unity3d.com/Packages/com.unity.localization@latest/
 ### UIライブラリの変遷
 #### NGUI期
 #### uGUI期
-#### UI Elements期
+#### UI Toolkit(旧名称:UI Elements)期
 ### プレハブ運用の変遷
 ## 非同期通信がある場合のUI考え事
 
