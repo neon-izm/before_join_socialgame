@@ -271,7 +271,7 @@ SugoiGameという凄いゲームがあって、 SugoiGameStudio.com で運営�
 1. ユーザAさんはゲームを起動した初回起動時に `SystemInfo.deviceUniqueIdentifier` を取得してAPIサーバのアカウント登録APIにPOSTします。(request bodyに入れてPOSTします)
 2. APIサーバはAさん用に a_sanSenyou_sugokunagai_mailaddress@sugoigamestudio.com という仮メールアドレスと、 sugokumuzukasiipasswordde_nagasa128moji みたいな仮パスワードを生成します。（実際は乱数を混ぜますよ！)
 3. APIサーバは2.で生成した仮メールアドレスと仮パスワードをアカウント登録APIのresponse bodyに含めてresponseを返します。
-4. Aさんの端末内に **暗号化した**　仮メールアドレスと仮パスワードを保持します。 
+4. Aさんは3.で仮メールアドレスと仮パスワードをAPIサーバから受け取りました。Aさんの端末内に **暗号化した**　仮メールアドレスと仮パスワードを保持します。 
 5. 以降のゲーム起動時は、4.の仮メールアドレスと仮パスワードを元にAPIサーバのログインAPIにログインをすることが出来ます。
 6. とは言え、基本的にはこの仮メールアドレスと仮パスワードを使ったログインは毎回ではなく、大体はクッキーあるいはJWTでのログインをします。あくまでこれは保険ですね。
 
