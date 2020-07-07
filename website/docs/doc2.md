@@ -80,7 +80,7 @@ Unityの画面上の反映例はこんな風になったりします。
 - HTTP1.0
 - UnityWebRequest
 
-### ヘッダ、ボディ、request、response
+### HTTPのヘッダ、ボディ、request、response
 HTTP通信は様々な要素があって大変ですが、Unityでサーバと通信するときは **GETとPOSTの2種を覚えておけばほとんどの場合足ります。** (PUTとDELETEはUnityバージョンによって実装が怪しかったことがあった気がします)  
 
 HTTP1.0の規格自体に踏み込んだ話はしないので、凄く大雑把な説明をすると
