@@ -43,9 +43,7 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Before Join Socialgame Client. Built with Docusaurus.`,
     },
-    prism: {
-      additionalLanguages: ['charp'],
-    },
+    
     gtag: {
       trackingID: 'UA-171789087-1',
     },
