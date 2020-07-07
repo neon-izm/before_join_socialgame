@@ -101,9 +101,8 @@ Jsonは平たく言うと「クラスの変数一覧を特定の書式に変形�
 C#のHogeクラス→Hogeクラスの変数をまとめたJson文字列(Jsonのシリアライズ、と言います)  
 Hogeクラスの変数をまとめたJson文字列→C#のHogeクラス(Jsonのデシリアライズ、と言います)  
 
-//ここにC#とgoのソースコード例
+以下に例を書きます。
 
-と言う相互変換が出来ます。
 
 それだけではなく
 Hogeクラスの変数をまとめたJson文字列→PHP（あるいはRuby,Goなどサーバサイド)で定義したHogeクラス 
@@ -111,15 +110,48 @@ Hogeクラスの変数をまとめたJson文字列→PHP（あるいはRuby,Go�
 への変換も特定の書式、というルールがあるので実行可能です。すごい！
 
 つまり、以下のように相互変換が出来ます。  
-**C#上のHogeクラス⇔Hogeクラスの変数をまとめたJson文字列⇔PHP上で定義したHogeクラス**  
+**C#上のHogeクラス⇔Hogeクラスの変数をまとめたJson文字列⇔PHPやGo上で定義したHogeクラス**  
+
+
+つまり、C#でこうやって作ったクラスは
+```cs
+    [Serializable]
+    public class PlayerStatus
+    {
+        public string player_name;
+        public int player_exp;
+        public int player_money;
+    }
+```
+
+jsonはこうなります
+```json
+{
+	"player_name": "taro",
+	"player_exp": 1000,
+	"player_money": 65534
+}
+```
+
+goだと
+```go
+
+type PlayerStatus struct {
+  Name      string   `json:"player_name"`
+  Exp         int      `json:"player_exp"`
+  PlayerMonery         int      `json:"player_money"`
+}
+
+```
+
+こうなります。これらの間で相互変換が出来ます。
 
 最初にこの仕組みを見たときに僕は感動しました。
 
+**注意**
 なおJsonのデータ構造がサーバとクライアントで違う場合、受け取った側がエラーを吐くので、データ構造のすり合わせはきちんとしましょう。(ユーザーIDのリストが欲しいのに、ユーザーIDが10個個別に送られて来てパース失敗!!みたいな話です)
 
-HTTP通信において **Jsonとは、通信するとき必要に応じて追加する情報の形式で、形にだけ気を付けて、後はUnityのJsonUtilityにお任せする** という認識でOKです。
-
-tips:プロジェクトによって、Jsonを取り扱うクラスがJsonUtilityじゃなくて独自だったり、utf8Jsonなど外部ライブラリの事もあります。あるいはメッチャ最新のJsonみたいなgRPCというやつを使ってる可能性もあります。参加したプロジェクトはJsonライブラリに何を使っているか確認して、なるべくそのライブラリを使いましょう！
+tips:プロジェクトによって、Jsonを取り扱うクラスがJsonUtilityじゃなくて独自だったり、utf8Jsonなど外部ライブラリの事もあります。あるいは **メッチャ最新のJsonみたいなgRPC** というやつを使ってる可能性もあります。参加したプロジェクトはJsonライブラリに何を使っているか確認して、なるべくそのライブラリを使いましょう！
 
 
 ### 通信が永続的か永続的じゃないか
