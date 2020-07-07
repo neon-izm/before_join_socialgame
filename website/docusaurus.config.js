@@ -44,6 +44,10 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Before Join Socialgame Client. Built with Docusaurus.`,
     },
   },
+  themeConfig: {
+    gtag: {
+      trackingID: 'UA-171789087-1',
+    },
   presets: [
     [
       '@docusaurus/preset-classic',
