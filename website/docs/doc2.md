@@ -21,7 +21,8 @@ sidebar_label: 1章:サーバサイドと仲良くなろう
 
 この規格があるおかげで、サーバとクライアントは別の言語で書いても大丈夫です。
 
-Unityの場合、 HTTP通信をするときに C#(.NET)のHttpClientクラスを使うことも可能ですが、大体の場合UnityWebRequestを使うことが多いです。メモリ的にも、UnityAPIとの親和性的にもUnityWebRequestがおすすめです。
+Unityの場合、 HTTP通信をするときに C#(.NET)のHttpClientクラスを使うことも可能ですが、大体の場合UnityWebRequestを使うことが多いです。  
+メモリ的にも、UnityAPIとの親和性的にもUnityWebRequestがおすすめです。  
 (UnityWebRequestをベースにしたhttpクラスの実装例: https://github.com/sassembla/Autoya/blob/master/Assets/Autoya/Connections/HTTP.cs  )
 
 
