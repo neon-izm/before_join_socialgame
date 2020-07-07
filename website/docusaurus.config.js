@@ -43,6 +43,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Before Join Socialgame Client. Built with Docusaurus.`,
     },
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+    },
     gtag: {
       trackingID: 'UA-171789087-1',
     },
