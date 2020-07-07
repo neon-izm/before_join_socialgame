@@ -15,7 +15,6 @@ sidebar_label: 1章:サーバサイドと仲良くなろう
 
 サーバに対して何らかの情報を送って、サーバから何らかの情報を受け取る、という時の標準プロトコルです。
 
-
 例えばWebブラウザは「僕はGoogle Chrome です。Yahooから検索してこのサイトに飛んできました」という情報を Github.com に送って、Githubのサーバはあなたにサイトの中身のhtmlを返しています。
 
 クライアントのC# + Unityに対してサーバサイドはPHPやGoやRubyやPerlなど、様々な別の言語で書かれています。これら別の言語で書かれたサーバと通信できるように決めた約束事の一つがHTTP通信(HTTP1.0)だと思っておくと良いです。（注:正確には違います）
@@ -84,7 +83,38 @@ Unityの画面上の反映例はこんな風になったりします。
 ### ヘッダ、ボディ、request、response
 HTTP通信は様々な要素があって大変ですが、Unityでサーバと通信するときは **GETとPOSTの2種を覚えておけばほとんどの場合足ります。** (PUTとDELETEはUnityバージョンによって実装が怪しかったことがあった気がします)  
 
+HTTP1.0の規格自体に踏み込んだ話はしないので、凄く大雑把な説明をすると
+
+クライアントからサーバに情報を送る時は　Request(リクエスト)通信と言い、サーバがそのお返事をクライアントに返す時はResponse(レスポンス)通信と言います。
+
+また、リクエスト、レスポンス通信にはそれぞれヘッダ（追加でkey-valueを好きなだけ詰められる場所)とボディ（本文）の二か所に情報を詰めることができます。
+
+このHTTP1.0通信をサーバと行う、というのをAPI通信と言ったりします。そしてAPI通信を行う相手のサーバをAPIサーバと呼びます。クライアントエンジニアが一番多く対話するサーバは、このAPIサーバです。
+
+通信形式はGET(リクエストボディが無い時に使う)かPOST(リクエストボディがある時に使う)の2種がメインです。ソーシャルゲームでは100個APIがあるとしたら、POSTが80個くらいを占めることも多いです。
+
+以下にUnityWebRequestで言うとヘッダはどこに入れるの、ボディはどこにあるの、というサンプルを示します。
+
+```cs
+string userStatus = JsonUtility.ToJson<PlayerStatus>(someData);//こうして、リクエストボディ(本文)を文字列にします
+
+var request= UnityWebRequest.Post(url,userStatus);//Postの第二引数がリクエストボディの文字列です
+request.SetRequestHeader(dic.Key, dic.Value);//こうしてリクエストヘッダを付与する
+var p = request.SendWebRequest();//ここでPostアクセスする
+
+//ここでpの完了を待つ
+             
+var responseCode = (int)request.responseCode;//レスポンスコード、200は成功。404は見つからない、401が認証エラー、503がサーバが混んでる、みたいなやつ
+var responseHeaders = request.GetResponseHeaders();//レスポンスヘッダはこうして取得します。
+
+var result = Encoding.UTF8.GetString(request.downloadHandler.data);//全然直感的じゃないですが、ここにレスポンスの本文が入ってます。
+
+//ここでresultをまたJsonUtilityなどを使ってデシリアライズする。               
+
+```
+
 会話例「このAPIってGETになってるけど、クライアントから現在の所持コイン数を渡してあげたいからPOSTにした方が良くないですか？」
+
 ### 通信エラーのリトライ処理をしよう
 
 ### Jsonって何
