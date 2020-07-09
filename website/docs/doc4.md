@@ -39,8 +39,8 @@ sidebar_label: 3章:運用を見据えて作っておこう
 - APNS ,Firebase Cloud Messeging(FCM)
 
 ### FirebaseCloudMessaging(FCM)
-事実上のデファクトスタンダード、GooglePlayStoreとAppStoreを対象にするならこれ。(Xiaomiストアとか中国を視野に入れるとまた事情が変わってきます)   
-GooglePlayStoreはFCMしか選択肢が無い（他のSDKも、内部で結局ここを叩いている）です。
+事実上のデファクトスタンダードなプッシュ通知SDKです。GooglePlayStoreとAppStoreを対象にするならこれが多いです。(Xiaomiストアとか中国を視野に入れるとまた事情が変わってきます)   
+GooglePlayStoreはFCMしか選択肢が無い（他のSDKも、内部で結局このSDKを叩いている）です。
 
 AppStoreの場合はAPNSがデフォルトのプッシュ通知システムで、FCMはiOS向けにAPNSをラップして居る。という状況です。
 正直なところプッシュ通知はユーザ数が増えたり、一斉送信するときに、思わぬハマりポイントがあるので、有識者に相談する事をオススメします。
