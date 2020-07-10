@@ -78,7 +78,15 @@ AppStoreの場合はAPNSがデフォルトのプッシュ通知システムで�
 https://qiita.com/neon-izm/items/b105130fac060ec40ad4
 
 ### AddressableAssetSystems(AAS)かAssetBundle(AB)か
-### プロジェクト分離するか同一運用するか
+UnityのAssetBundleは、かなり低レイヤーのAPIだけが用意されている状況でした。そのため各社がオレオレAssetBundleManagerを作っている、という状況でした。
+
+それに対してUnity側がある程度の高レイヤーなシステムとしてAddressableAssetSystems(AAS)を提供しました。Unity2018.3以降であれば使うことが出来ます。
+AASはABをラップした仕組みですが、触っていくとABの挙動を理解していないと意味不明になることがあるので、一旦ABを覚えておくのが良い気がします。
+
+両者は対立する概念では無く低レベルAPIなのか高レベルAPIなのか、という感じの理解をしておくと良いと思います。
+もしプロジェクトにこういった基盤が何も無ければ、おすすめとしてはAASです。あるいはABを使う場合はAutoyaを検討してください。僕のオススメUnityフレームワークです。
+
+### AssetBundle用のプロジェクトを分離するか同一運用するか
 ## 機種変引継ぎ対応
 
 ### メールアドレス登録
