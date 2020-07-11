@@ -1,3 +1,5 @@
+[![release](https://img.shields.io/github/release/neon-izm/before_join_socialgame.svg?style=flat-square)](https://github.com/neon-izm/before_join_socialgame/releases)  ![Deploy](https://github.com/neon-izm/before_join_socialgame/workflows/Deploy/badge.svg?branch=master)
+
 ソーシャルゲームのクライアントエンジニア入門以前　のWebサイトの中身リポジトリです。
 
 https://neon-izm.github.io/before_join_socialgame/
