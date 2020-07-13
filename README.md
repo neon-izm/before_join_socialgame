@@ -20,7 +20,7 @@ are simple markdown file.You can fork and write anything.
 2. `choco install nodejs`
 3. `choco install yarn`
 4. `yarn global add @docusaurus/init@next`
-5. cd to website root directory
+5. cd to website root directory (example  C:/Github/before_join_socialgame/website)
 6. `yarn install`
 7. `yarn run start`
 8. access to http://localhost:3000/before_join_socialgame/
