@@ -45,7 +45,7 @@ https://github.com/SnowCait/game-development-notes
 - ゲーム自体の面白さの担保
 - ソースコードレベルの実装例
 - サーバサイドのアーキテクチャや処理内容
-- 厳密なチート対策
+- 厳密なチート対策 (こちらのサイトを読むことで、IL2CPPであっても十分に解析されることを理解できます。 https://engineering.linecorp.com/ja/blog/unity-from-a-security-engineer-point-of-view/ )
 
 これらについては触れていません。この文書に対応するサーバサイドの物があれば、リンクを貼ろうと思います。  
 
