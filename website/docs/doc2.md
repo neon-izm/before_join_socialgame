@@ -177,7 +177,7 @@ goだと
 type PlayerStatus struct {
   Name      string   `json:"player_name"`
   Exp         int      `json:"player_exp"`
-  PlayerMonery         int      `json:"player_money"`
+  PlayerMoney         int      `json:"player_money"`
 }
 
 ```
