@@ -87,7 +87,7 @@ Unityの画面上の反映例はこんな風になったりします。
 - UnityWebRequest
 
 ### HTTPのヘッダ、ボディ、request、response
-HTTP通信は様々な要素があって大変ですが、Unityでサーバと通信するときは **GETとPOSTの2種を覚えておけばほとんどの場合足ります。** (PUTとDELETEはUnityバージョンによって実装が怪しかったことがあった気がします)  
+HTTP通信は様々な要素があって大変ですが、Unityでサーバと通信するときは **GETとPOSTの2種の HTTP Request Method を覚えておけばほとんどの場合足ります。** (PUTとDELETEはUnityバージョンによって実装が怪しかったことがあった気がします)  
 
 HTTP1.0の規格自体に踏み込んだ話はしないので、凄く大雑把な説明をすると
 
@@ -209,9 +209,23 @@ tips:プロジェクトによって、Jsonを取り扱うクラスがJsonUtility
 
 ワードやエクセルを駆使して頑張って仕様書を作ることになり、仕様変更のたびに苦労することになります。
 
+**フォーマットの選択肢**
+最もメジャーなテキストフォーマットはJsonですが、バイナリーフォーマットのMessagePack や Protocol Buffers も採用することがあります。
+[こちらの方が通信量やパフォーマンスの観点では優れいる場合が多いです](https://techblog.kayac.com/unity-protocol-buffers)。
+（デバッグしやすさにおいてはjsonに軍配が上がります）
+
+開発中はデバッグが容易なjsonで行い、開発末期にパフォーマンス・チューニングのためにバイナリーフォーマットが変わることはしばしばあります。
+
+※なお、Protocol Buffers はIDL（インタフェース定義言語）が必須のためデータ構造の仕様書のような役割も果たします。
+
+
 **詳しく知りたい人は、この辺の単語でググってほしい**
 * OpenAPI(Swagger)
 * API Blueprint
+* RESTful API
+* Json
+* MessagePack
+* ProtocolBuffers
 
 
 ### 通信が永続的か永続的じゃないか
