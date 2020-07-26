@@ -32,7 +32,7 @@ Unityの場合、 HTTP通信をするときに C#(.NET)のHttpClientクラスを
 
 
 ### http通信の概要例
-- お知らせ一覧(例: https://information.com/api/information )を取得する場合
+- お知らせ一覧(例: https://example.com/api/information )を取得する場合
 
 ここで使う用語
 
