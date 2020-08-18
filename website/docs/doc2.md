@@ -184,9 +184,9 @@ goだと
 ```go
 
 type PlayerStatus struct {
-  Name      string   `json:"player_name"`
+  Name        string   `json:"player_name"`
   Exp         int      `json:"player_exp"`
-  PlayerMoney         int      `json:"player_money"`
+  PlayerMoney int      `json:"player_money"`
 }
 
 ```
