@@ -426,6 +426,7 @@ SugoiGameという凄いゲームがあって、 SugoiGameStudio.com で運営�
 - Twitterログイン
 - LINEログイン
 - facebookログイン
+- Apple Game Center
 - SignInWithApple
 - GooglePlayServices
 
