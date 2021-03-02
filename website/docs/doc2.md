@@ -216,7 +216,7 @@ Unity標準のJSONパーサーは型定義が分かっていればstructにス�
 
 最もメジャーなテキストフォーマットはJsonですが、バイナリーフォーマットのMessagePack や Protocol Buffers も採用することがあります。
 
-[こちらの方が通信量やパフォーマンスの観点では優れいる場合が多いです](https://techblog.kayac.com/unity-protocol-buffers)
+[こちらの方が通信量やパフォーマンスの観点では優れている場合が多いです](https://techblog.kayac.com/unity-protocol-buffers)
 
 （デバッグしやすさにおいてはjsonに軍配が上がります）
 
