@@ -16,7 +16,7 @@ are simple markdown file.You can fork and write anything.
 
 # Setup(Windows)
 0. launch PowerShell
-1. `install chocolatey`
+1. [install chocolatey](https://chocolatey.org/install)
 2. `choco install nodejs`
 3. `choco install yarn`
 4. `yarn global add @docusaurus/init@next`
