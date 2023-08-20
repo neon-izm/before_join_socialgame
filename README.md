@@ -15,8 +15,9 @@ are simple markdown file.You can fork and write anything.
 内の*.mdファイルはシンプルなテキストのmarkdownファイルなので、ここだけをローカルのテキストエディタで編集すれば、プレビュー出来ます。
 
 # Setup(Windows)
-0. launch PowerShell with administrator
-1. `install chocolatey`
+
+0. launch PowerShell
+1. [install chocolatey](https://chocolatey.org/install)
 2. `choco install nodejs --version=16.16.0`
 3. `choco install yarn`
 4. `yarn global add @docusaurus/init@next`
