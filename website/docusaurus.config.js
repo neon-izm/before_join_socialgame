@@ -43,10 +43,6 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Before Join Socialgame Client. Built with Docusaurus.`,
     },
-    
-    gtag: {
-      trackingID: 'UA-171789087-1',
-    },
   },
  
   presets: [
@@ -56,7 +52,6 @@ module.exports = {
         docs: {
 		  //routeBasePath: 'docs/',
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
