@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[789],{9339:function(e){e.exports=JSON.parse('{"label":"hello","permalink":"/before_join_socialgame/blog/tags/hello","allTagsPath":"/before_join_socialgame/blog/tags","count":2}')}}]);

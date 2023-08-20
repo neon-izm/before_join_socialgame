@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{85:function(o){o.exports=JSON.parse('{"allTagsPath":"/before_join_socialgame/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/before_join_socialgame/blog/tags/hello"}')}}]);
