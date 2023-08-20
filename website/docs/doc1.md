@@ -1,4 +1,5 @@
 ---
+slug: /
 id: doc1
 title: はじめに
 sidebar_label: はじめに

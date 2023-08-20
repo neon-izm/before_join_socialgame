@@ -7,13 +7,15 @@ on:
 jobs:
   deploy:
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: website
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
     - name: git config
       run: |
         git config --global user.email "jj.y0sh1da@gmail.com"
