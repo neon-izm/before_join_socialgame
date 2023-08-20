@@ -20,11 +20,13 @@ jobs:
         node-version: '16.16.0'
         cache: yarn
         cache-dependency-path: ./website/yarn.lock
-    - name: git config
-      run: |
-        git config --global user.email "jj.y0sh1da@gmail.com"
-        git config --global user.name "neon-izm"
-    - run: yarn install --frozen-lockfile
-    - run: yarn deploy
+    - name: Deploy to Github Pages
       env:
-        GIT_USER: ${{ github.actor }}:${{ secrets.SOCIALGAME_GITHUB_TOKEN }}
+        USE_SSH: true
+        GIT_USER: git
+      run: 
+         git config --global user.email "jj.y0sh1da@gmail.com"
+         git config --global user.name "neon-izm"
+         yarn install --frozen-lockfile
+         yarn deploy
+      
