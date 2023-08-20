@@ -22,8 +22,8 @@ jobs:
         cache-dependency-path: ./website/yarn.lock
     - name: git config
       run: |
-        git config --global user.email "docusaurus@example.com"
-        git config --global user.name "docusaurus"
+        git config --global user.email "jj.y0sh1da@gmail.com"
+        git config --global user.name "neon-izm"
     - name: Deploy to Github Pages
       env:
         GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
