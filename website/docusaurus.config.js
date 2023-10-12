@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'ソーシャルゲームのクライアントエンジニア入門以前',
+  title: 'ソーシャルゲームのUnityクライアントエンジニア入門以前',
   tagline: 'http getから運用基盤まで',
   url: 'https://neon-izm.github.io',
   baseUrl: '/before_join_socialgame/',
