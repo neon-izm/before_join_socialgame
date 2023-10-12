@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches: [ master,feature/testimp/github-actions ]
-
+permissions: write-all
 jobs:
   deploy:
     name: Deploy to GitHub Pages
