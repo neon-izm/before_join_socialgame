@@ -7,7 +7,9 @@ on:
 jobs:
   deploy:
     name: Deploy to GitHub Pages
-    runs-on: ubuntu-22.04
+    env:
+        GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: website
@@ -20,13 +22,17 @@ jobs:
         node-version: '16.16.0'
         cache: yarn
         cache-dependency-path: ./website/yarn.lock
-    - name: git config
-      run: |
-        git config --global user.email "jj.y0sh1da@gmail.com"
-        git config --global user.name "neon-izm"
-    - name: Deploy to Github Pages
-      env:
-        GIT_USER: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-      run: |
-        yarn install --frozen-lockfile
-        yarn deploy
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile --non-interactive
+    - name: Build
+      run: yarn build    
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        # 👇 Specify build output path
+        path: build
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2  
