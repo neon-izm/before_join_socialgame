@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'neon-izm', // Usually your GitHub org/user name.
   projectName: 'before_join_socialgame', // Usually your repo name.
+  staticDirectories: ['public', 'static'],
   themeConfig: {
     navbar: {
       title: 'Site Top',
