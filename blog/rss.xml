@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>ソーシャルゲームのクライアントエンジニア入門以前 Blog</title>
+        <title>ソーシャルゲームのUnityクライアントエンジニア入門以前 Blog</title>
         <link>https://neon-izm.github.io/before_join_socialgame/blog</link>
-        <description>ソーシャルゲームのクライアントエンジニア入門以前 Blog</description>
+        <description>ソーシャルゲームのUnityクライアントエンジニア入門以前 Blog</description>
         <lastBuildDate>Thu, 30 May 2019 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>

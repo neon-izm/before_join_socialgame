@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://neon-izm.github.io/before_join_socialgame/blog</id>
-    <title>ソーシャルゲームのクライアントエンジニア入門以前 Blog</title>
+    <title>ソーシャルゲームのUnityクライアントエンジニア入門以前 Blog</title>
     <updated>2019-05-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://neon-izm.github.io/before_join_socialgame/blog"/>
-    <subtitle>ソーシャルゲームのクライアントエンジニア入門以前 Blog</subtitle>
+    <subtitle>ソーシャルゲームのUnityクライアントエンジニア入門以前 Blog</subtitle>
     <icon>https://neon-izm.github.io/before_join_socialgame/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
