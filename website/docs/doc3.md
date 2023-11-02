@@ -238,5 +238,6 @@ https://github.com/mr-imada/OutgameSample
 
 ### シーン遷移管理フレームワーク 
 
-[Navigathena](https://github.com/mackysoft/Navigathena)
+[Navigathena](https://github.com/mackysoft/Navigathena)  
+
 [Unityの最強シーン遷移管理フレームワーク『Navigathena』と画面管理の設計思想について解説](https://zenn.dev/makihiro_dev/articles/scene-management-framework)
