@@ -179,6 +179,7 @@ Unityのソーシャルゲーム開発、というよりUnityの大規模開発�
 - DIフレームワーク for Unity的なもの
 - DIフレームワークと言いつつSignalBusやTickableも持っていたりする
 - どこまでZenjectを使う方針か確認しましょう
+- 最近のプロジェクトだと[VContainer](https://vcontainer.hadashikick.jp/) を使う事も多いです
 
 ### UniTask
 - Unity C#がC#7.x以降の構文を扱えるようになった結果、非同期処理にasyncとawaitが使えるようになった
@@ -219,3 +220,23 @@ Unityを使った大規模開発系では、以下のツール・ミドルウェ
 - これは製品名ではなく製品カテゴリの名前
 - ログイン、ユーザーデータ保存、ログボ、ギルド等のサーバー側機能をまとめたサービス
 - 自社でバックエンドを組まない小規模タイトルや、プロトタイプ時のドライバ・スタブとしても活用価値あり
+
+## OSSの参考例を知ろう
+実際の画面遷移やシーン管理のコードはどうなるのかな？と気になってきた方は以下のものが参考になると思います。
+
+### アウトゲームのサンプル
+ミラティブでのアウトゲーム設計の紹介  
+https://tech.mirrativ.stream/entry/2023/09/22/112042
+
+OutgameSample  
+https://github.com/mr-imada/OutgameSample
+
+- [Unity Screen Navigator](https://light11.hatenadiary.com/entry/2022/01/11/193925) を使った画面遷移
+- [ScreenSystem](https://github.com/adarapata/ScreenSystem)による画面構成
+
+などを含みます。
+
+### シーン遷移管理フレームワーク 
+
+[Navigathena](https://github.com/mackysoft/Navigathena)
+[Unityの最強シーン遷移管理フレームワーク『Navigathena』と画面管理の設計思想について解説](https://zenn.dev/makihiro_dev/articles/scene-management-framework)
